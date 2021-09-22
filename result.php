@@ -4,11 +4,18 @@
 
 </head>
 <body>
+  <?php
+  //back button
+  echo " <form action=\"index.php\">
+     <input type=\"submit\" value=\"Wróć do wpisywania kodów\">
+   </form>";
+
+   ?>
 <?php
 try{
   include 'conn.php';
   //connect to db
-  $conn = new PDO("mysql:host=$servername;dbname=vw_decoder", $login, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $login, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   //echo "baza podłaczona";
@@ -62,9 +69,6 @@ $stmt = $conn->prepare("SELECT `Kod`,`Opis` FROM `kody_pl`WHERE `Kod` IN ( ?, ?,
   foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
     echo $v;
 }//fetch to array
-echo " <form action=\"index.php\">
-   <input type=\"submit\" value=\"Wróć do wpisywania kodów\">
- </form>";
 
  ?>
 </body>
