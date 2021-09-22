@@ -6,39 +6,14 @@
 <body>
   <?php
   //include cfgs
-  include 'conn.php';
   include 'vars.php';
-  try{
-    //connect to db
-    $conn = new PDO("mysql:host=$servername;dbname=vw_decoder", $login, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    //echo "baza podłaczona";
-    //test connection pass ^
-  }catch(PDOException $e) {
-    //echo "Connection failed: " . $e->getMessage();
-    //test connection failed ^
-}
-  //check on start codes
-  @$kod1 = $_POST["code1"];
-  @$kod2 = $_POST["code2"];
-  @$kod3 = $_POST["code3"];
-  @$kod4 = $_POST["code4"];
-  @$kod5 = $_POST["code5"];
-  @$kod6 = $_POST["code6"];
-  @$kod7 = $_POST["code7"];
-  @$kod8 = $_POST["code8"];
-  @$kod9 = $_POST["code9"];
-  @$kod10 = $_POST["code10"];
-  //check codes work good
-  //echo $kod1;
 
    ?>
   <nav>
   </nav>
   <div name="main">
-    <form action="#" method="post">
-      Kod 1:<input type="text" maxlength="3" name="code1" value="<?php echo @$kod1; ?>">
+    <form action="result.php" method="post">
+      Kod 1:<input type="text" maxlength="3" name="code1">
       Kod 2:<input type="text" maxlength="3" name="code2">
       Kod 3:<input type="text" maxlength="3" name="code3"><br>
       Kod 4:<input type="text" maxlength="3" name="code4">
@@ -49,15 +24,10 @@
       Kod 9:<input type="text" maxlength="3" name="code9"><br>
       Kod 10:<input type="text" maxlength="3" name="code10"><br>
       <input type="submit" value="Sprawdź">
-      <input type="button" value="Resetuj" onclick="<?php $kod1 =""; echo @$kod1;
-      ?>">
+      <input type="button" value="Resetuj">
     </form>
 <?php
-//load form db eq description
 
-//fetch to array
-
-// display on tablevwiev
  ?>
   </div>
   <footer>
