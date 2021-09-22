@@ -5,7 +5,20 @@
 </head>
 <body>
   <?php
+  //include cfgs
   include 'conn.php';
+  include 'vars.php';
+  try{
+    //connect to db
+    $conn = new PDO("mysql:host=$servername;dbname=vw_decoder", $login, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    //echo "baza podłaczona";
+    //test connection pass ^
+  }catch(PDOException $e) {
+    //echo "Connection failed: " . $e->getMessage();
+    //test connection failed ^
+}
   //check on start codes
   @$kod1 = $_POST["code1"];
   @$kod2 = $_POST["code2"];
@@ -17,8 +30,8 @@
   @$kod8 = $_POST["code8"];
   @$kod9 = $_POST["code9"];
   @$kod10 = $_POST["code10"];
-
-  echo $kod1;
+  //check codes work good
+  //echo $kod1;
 
    ?>
   <nav>
@@ -39,9 +52,16 @@
       <input type="button" value="Resetuj" onclick="<?php $kod1 =""; echo @$kod1;
       ?>">
     </form>
+<?php
+//load form db eq description
 
+//fetch to array
+
+// display on tablevwiev
+ ?>
   </div>
   <footer>
+    <?php echo "Copyright©".$year." By Scoobydowsky";?>
   </footer>
 </body>
 </html>
