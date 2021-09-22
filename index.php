@@ -13,7 +13,7 @@
   </nav>
   <div name="main">
     <form action="result.php" method="post">
-      Kod 1:<input type="text" maxlength="3" name="code1">
+      Kod 1:<input type="text" maxlength="3" name="code1" required>
       Kod 2:<input type="text" maxlength="3" name="code2">
       Kod 3:<input type="text" maxlength="3" name="code3"><br>
       Kod 4:<input type="text" maxlength="3" name="code4">
