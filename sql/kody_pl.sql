@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 22 Wrz 2021, 13:42
+-- Czas generowania: 22 Wrz 2021, 13:59
 -- Wersja serwera: 10.4.20-MariaDB
 -- Wersja PHP: 8.0.9
 
@@ -1769,8 +1769,8 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (1728, '3DX', 'winter tires 185/55 R 15 82T with steel wheel 6J x 15, with cover'),
 (1729, '3DY', 'winter tires 185/55 R 15 82H with steel wheel 6J x 15, without cover'),
 (1730, '3DZ', 'winter tires 185/55 R 15 82H with steel wheel 6J x 15, with cover'),
-(1731, '3,00E+00', 'w/o stacking panel in load compartment'),
-(1732, '3,00E+01', 'stacking panel in load compartment'),
+(1731, '3E0', 'w/o stacking panel in load compartment'),
+(1732, '3E1', 'stacking panel in load compartment'),
 (1733, '3EA', 'without roof insert in cab (closed)'),
 (1734, '3EB', 'sun roof in cab (removable/tilting)'),
 (1735, '3EC', 'roof insert in cab (tilting) (rooflight)'),
@@ -2325,16 +2325,16 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (2283, '4DU', 'quarter vent in passenger compartment front left'),
 (2284, '4DW', 'quarter vent dark tinted (acrylic glass)in load/passenger compartment front left'),
 (2285, '4DZ', 'plastic window in load/passenger compartment front left'),
-(2286, '4,00E+00', 'tailgate/trunk lid unlocking from outside'),
-(2287, '4,00E+01', 'tailgate/trunk lid release from inside (mechanical)'),
-(2288, '4,00E+02', 'tailgate/trunk lid release from inside (electrically)'),
-(2289, '4,00E+03', 'without tailgate release lever inside'),
-(2290, '4,00E+04', 'rear door/tailgate release lever inside'),
-(2291, '4,00E+05', 'tailgate/trunk lid unlocking from outside'),
-(2292, '4,00E+06', 'tailgate/trunk lid release from inside only'),
-(2293, '4,00E+07', 'trunk lid power closing'),
-(2294, '4,00E+08', 'tailgate/trunk lid release from inside (electrically)'),
-(2295, '4,00E+09', 'trunk lid power closing with operating lever inside'),
+(2286, '4E0', 'tailgate/trunk lid unlocking from outside'),
+(2287, '4E1', 'tailgate/trunk lid release from inside (mechanical)'),
+(2288, '4E2', 'tailgate/trunk lid release from inside (electrically)'),
+(2289, '4E3', 'without tailgate release lever inside'),
+(2290, '4E4', 'rear door/tailgate release lever inside'),
+(2291, '4E5', 'tailgate/trunk lid unlocking from outside'),
+(2292, '4E6', 'tailgate/trunk lid release from inside only'),
+(2293, '4E7', 'trunk lid power closing'),
+(2294, '4E8', 'tailgate/trunk lid release from inside (electrically)'),
+(2295, '4E9', 'trunk lid power closing with operating lever inside'),
 (2296, '4EA', 'without side window aperture in load compartment front right'),
 (2297, '4EB', 'side window aperture without window load/passenger compartment front right'),
 (2298, '4EC', 'side window clear glass load/passenger compartment front right'),
@@ -2631,9 +2631,9 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (2589, '4S1', 'armrests for both front seats'),
 (2590, '4S2', 'armrest for left front seat'),
 (2591, '4S3', 'armrest for right front seat'),
-(2592, '4S4', 'armrests');
+(2592, '4S4', 'armrests'),
+(2593, '4S5', 'armrests, electrically adjustable');
 INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
-(2593, '4S5', 'armrests, electrically adjustable'),
 (2594, '4SA', 'without left vanity mirror'),
 (2595, '4SB', 'vanity mirror left'),
 (2596, '4SC', 'left vanity mirror with cover'),
@@ -2866,16 +2866,16 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (2823, '5DU', 'side panel trim in load compartment (up to roof frame) unpainted plywood'),
 (2824, '5DV', 'side trim panel for basic equipment (extended)'),
 (2825, '5DZ', 'side panel trim in passenger compartment for special editions'),
-(2826, '5,00E+00', 'large sill top with door cover'),
-(2827, '5,00E+01', 'without sill top with door cover'),
-(2828, '5,00E+02', 'sill top with door cover'),
-(2829, '5,00E+03', 'large sill top with door cover'),
-(2830, '5,00E+04', 'sill top with door cover'),
-(2831, '5,00E+05', 'sill top with door cover'),
-(2832, '5,00E+06', 'sill top with door cover'),
-(2833, '5,00E+07', 'large sill top with door cover'),
-(2834, '5,00E+08', 'large sill top with door cover'),
-(2835, '5,00E+09', 'sill top with door cover'),
+(2826, '5E0', 'large sill top with door cover'),
+(2827, '5E1', 'without sill top with door cover'),
+(2828, '5E2', 'sill top with door cover'),
+(2829, '5E3', 'large sill top with door cover'),
+(2830, '5E4', 'sill top with door cover'),
+(2831, '5E5', 'sill top with door cover'),
+(2832, '5E6', 'sill top with door cover'),
+(2833, '5E7', 'large sill top with door cover'),
+(2834, '5E8', 'large sill top with door cover'),
+(2835, '5E9', 'sill top with door cover'),
 (2836, '5EA', 'without different vehicle equipment'),
 (2837, '5EB', 'ambulance equipment according to standard DIN 75080'),
 (2838, '5EC', 'different vehicle equipment for company AUWAERTER'),
@@ -3263,15 +3263,15 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (3220, '6DE', 'see supplement for MAN M-Number'),
 (3221, '6DX', 'see supplement for MAN M-Number'),
 (3222, '6DY', 'see supplement for MAN M-Number'),
-(3223, '6,00E+00', 'without center armrest front'),
-(3224, '6,00E+01', 'center armrest front'),
-(3225, '6,00E+02', 'WITHOUT CENTRE ARMREST FRONT, WITH BACK SUPPORT'),
-(3226, '6,00E+03', 'center armrest front'),
-(3227, '6,00E+04', 'WITH COLLAPSABLE CENTRE ARMREST FRONT, WITH BACK SUPPORT'),
-(3228, '6,00E+05', 'WITH CENTRE ARMREST FRONT FOR TELEPHONE INSTALLATION OR TELEPHONE PREPARATION, WITH BACK SUPPORT'),
-(3229, '6,00E+06', 'center armrest front'),
-(3230, '6,00E+07', 'center armrest front'),
-(3231, '6,00E+08', 'without center armrest front, with electrically operated lumbar support'),
+(3223, '6E0', 'without center armrest front'),
+(3224, '6E1', 'center armrest front'),
+(3225, '6E2', 'WITHOUT CENTRE ARMREST FRONT, WITH BACK SUPPORT'),
+(3226, '6E3', 'center armrest front'),
+(3227, '6E4', 'WITH COLLAPSABLE CENTRE ARMREST FRONT, WITH BACK SUPPORT'),
+(3228, '6E5', 'WITH CENTRE ARMREST FRONT FOR TELEPHONE INSTALLATION OR TELEPHONE PREPARATION, WITH BACK SUPPORT'),
+(3229, '6E6', 'center armrest front'),
+(3230, '6E7', 'center armrest front'),
+(3231, '6E8', 'without center armrest front, with electrically operated lumbar support'),
 (3232, '6EA', 'without additional side body covers (stone guard)'),
 (3233, '6EB', 'additional body covers, stone guard and partial trim plate'),
 (3234, '6EC', 'additional body covers on wheel arch without sill cover'),
@@ -3501,10 +3501,10 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (3458, '6VD', 'side window tinted load/passenger compartment center left'),
 (3459, '6VF', 'sliding window clear glass load/passenger compartment center left'),
 (3460, '6VG', 'sliding window tinted load/passenger compartment center left'),
-(3461, '6VH', 'side window in load/passenger compartment, center, left');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(3461, '6VH', 'side window in load/passenger compartment, center, left'),
 (3462, '6VJ', 'sliding window in load/passenger compartment, center, left'),
-(3463, '6W0', 'without license plate bracket front'),
+(3463, '6W0', 'without license plate bracket front');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (3464, '6W1', 'license plate bracket front (large)'),
 (3465, '6W2', 'license plate bracket front (small)'),
 (3466, '6W3', 'license plate bracket front (small, NAR)'),
@@ -3660,15 +3660,15 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (3616, '7DX', 'winter tires with PAX system 215/680 R 480 A 98H, with alloy wheel 215 x 480 A 7-spoke style, offset 20'),
 (3617, '7DY', 'winter tires 205/50 R 17 H with alloy wheel 6J x 17, offset 48.5'),
 (3618, '7DZ', 'winter tires PAX system 205/640-440 with alloy wheel 205 x 440 5-spoke S-style'),
-(3619, '7,00E+00', 'w/o heat accumulator/auxiliary heating'),
-(3620, '7,00E+01', 'engine residual heat system'),
-(3621, '7,00E+02', 'heated crankcase ventilation system'),
-(3622, '7,00E+03', 'sheathed type glow plug heater'),
-(3623, '7,00E+04', 'auxiliary heating for water circulation'),
-(3624, '7,00E+05', 'sheathed type glow plug and crankcase ventilation system heater'),
-(3625, '7,00E+06', 'electric auxiliary air heater'),
-(3626, '7,00E+07', 'electric auxiliary air heater with anti-snow system'),
-(3627, '7,00E+08', 'auxiliary heating for water circulation with anti-snow system'),
+(3619, '7E0', 'w/o heat accumulator/auxiliary heating'),
+(3620, '7E1', 'engine residual heat system'),
+(3621, '7E2', 'heated crankcase ventilation system'),
+(3622, '7E3', 'sheathed type glow plug heater'),
+(3623, '7E4', 'auxiliary heating for water circulation'),
+(3624, '7E5', 'sheathed type glow plug and crankcase ventilation system heater'),
+(3625, '7E6', 'electric auxiliary air heater'),
+(3626, '7E7', 'electric auxiliary air heater with anti-snow system'),
+(3627, '7E8', 'auxiliary heating for water circulation with anti-snow system'),
 (3628, '7EA', 'winter tires 205/55 R 16 91H with alloy wheels 6 1/2J x 16, offset 51'),
 (3629, '7EB', 'winter tires 195/60 R 16 with steel wheel'),
 (3630, '7EC', 'winter tires 195/60 R 16 with steel wheel and wheel center cover'),
@@ -4016,12 +4016,12 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (3972, '8DX', 'Radio 6006 N with integrated 6-CD changer'),
 (3973, '8DY', 'radio \"quot;HIGH\" America'),
 (3974, '8DZ', 'radio \"HIGH\" Japan'),
-(3975, '8,00E+00', 'without interference suppression'),
-(3976, '8,00E+01', 'WITH AIR AND WINDSCREEN WIPER INTER- FERENCE SUPPRESSION'),
-(3977, '8,00E+02', 'local interference suppression for FM/AMradio reception'),
-(3978, '8,00E+03', 'local interference suppression for prepared radio system'),
-(3979, '8,00E+04', 'complete interference suppression for military vehicles'),
-(3980, '8,00E+05', 'local interference suppression for FM radio reception'),
+(3975, '8E0', 'without interference suppression'),
+(3976, '8E1', 'WITH AIR AND WINDSCREEN WIPER INTER- FERENCE SUPPRESSION'),
+(3977, '8E2', 'local interference suppression for FM/AMradio reception'),
+(3978, '8E3', 'local interference suppression for prepared radio system'),
+(3979, '8E4', 'complete interference suppression for military vehicles'),
+(3980, '8E5', 'local interference suppression for FM radio reception'),
 (3981, '8EA', 'headlight with gas discharge lamp for driving on the right (US design)'),
 (3982, '8EB', 'twin headlamp, for driving on the right (gas discharge) w/ integrated high beam (US design)'),
 (3983, '8EC', 'bi-functional headlight with gas discharge lamp, for driving on the left'),
@@ -4385,12 +4385,12 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (4341, '8YN', 'radio \"symphony\" for USA'),
 (4342, '8YP', 'radio \"MID\"'),
 (4343, '8YQ', 'radio \"HIGH\"'),
-(4344, '8YR', 'radio \"symphony\" for Japan');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(4344, '8YR', 'radio \"symphony\" for Japan'),
 (4345, '8YS', 'radio \"Deluxe\" for USA'),
 (4346, '8YT', 'radio \"Premium\"'),
 (4347, '8YU', 'radio preparation for commercial goods'),
-(4348, '8YV', 'without radio, but with wiring harness for four speakers'),
+(4348, '8YV', 'without radio, but with wiring harness for four speakers');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (4349, '8YW', 'without radio, but with preparation for six speakers'),
 (4350, '8YY', 'radio with navigation device RNS'),
 (4351, '8YZ', 'without radio, but with preparation for'),
@@ -4512,10 +4512,10 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (4467, '9DK', 'MAN M-Number'),
 (4468, '9DP', 'MAN M-Number'),
 (4469, '9DS', 'MAN M-Number'),
-(4470, '9,00E+00', 'without trunk lighting'),
-(4471, '9,00E+01', 'luggage compartment lighting'),
-(4472, '9,00E+02', 'load compartment lighting'),
-(4473, '9,00E+03', 'luggage compartment lighting'),
+(4470, '9E0', 'without trunk lighting'),
+(4471, '9E1', 'luggage compartment lighting'),
+(4472, '9E2', 'load compartment lighting'),
+(4473, '9E3', 'luggage compartment lighting'),
 (4474, '9EA', 'wire assembly for 4-cylinder carburetor'),
 (4475, '9EB', 'wire assembly for 4-cylinder fuel injected engine'),
 (4476, '9EC', 'wire assembly for 5-cylinder fuel injected engine'),
@@ -5243,12 +5243,12 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (5198, 'C6N', 'alloy wheels 7J x 15 8-arm style, offset 45'),
 (5199, 'C6P', 'alloy wheels 7J x 16 nine-spoke style, offset 45'),
 (5200, 'C6Q', 'alloy wheels 7J x 15 six-arm style, offset 37'),
-(5201, 'C6R', 'alloy wheels 7J x 16 ten-spoke style, offset 45');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(5201, 'C6R', 'alloy wheels 7J x 16 ten-spoke style, offset 45'),
 (5202, 'C6S', 'alloy wheels 6 1/2J x 16 L&K chrome version, offset 42'),
 (5203, 'C6T', 'cast alloy wheels 7J x 16 \"Competition\" offset 37'),
 (5204, 'C6U', 'forged alloy wheels 6J x 15 polished, offset 45'),
-(5205, 'C6V', 'alloy wheels 6J x 15 \"Avus\" offset 38'),
+(5205, 'C6V', 'alloy wheels 6J x 15 \"Avus\" offset 38');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (5206, 'C6W', 'alloy wheels 6J x 15'),
 (5207, 'C6X', 'cast alloy wheels 6J x 15 twelve-spoke style, offset 38'),
 (5208, 'C6Y', 'cast alloy wheels 6J x 15 six-spoke style, offset 38'),
@@ -6191,11 +6191,11 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (6145, 'G0J', 'five-speed manual transmission different spread of gear ratio'),
 (6146, 'G0K', '6-speed manual transmission'),
 (6147, 'G0L', 'six-speed manual transmission for four-wheel drive vehicle'),
-(6148, 'G0M', 'six-speed manual transmission top speed in fifth gear');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(6148, 'G0M', 'six-speed manual transmission top speed in fifth gear'),
 (6149, 'G0N', 'five-speed manual transmission for four-wheel drive vehicle (three-shaft transmission)'),
 (6150, 'G0P', 'automated shift gearbox (ASG/DS) (five-speed)'),
-(6151, 'G0Q', 'five-speed automatic transmission for four-wheel drive vehicle'),
+(6151, 'G0Q', 'five-speed automatic transmission for four-wheel drive vehicle');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (6152, 'G0R', 'six-speed automatic transmission for four-wheel drive vehicle'),
 (6153, 'G0S', 'five-speed manual transmission for four-wheel drive vehicle (top speed in fourth gear)'),
 (6154, 'G0U', 'automated shift gearbox (ASG) (6-speed)'),
@@ -7227,10 +7227,10 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (7180, 'M1J', '5-cylinder gasoline engine 2.3 L/98 kW electronic fuel injection with cat base engine is T3C'),
 (7181, 'M1K', '5-cylinder gasoline engine 2.3 L/98 kW electr. fuel injection system, activatedcharcoal canister base engine is T3C'),
 (7182, 'M1L', '4-cylinder gasoline engine 1.6 L/55 kW Monomotronic, closed-loop cat. converterbase engine is T4L'),
-(7183, 'M1M', '6-cyl. gasoline engine 2.9 L/140 kW VR6 Motronic, closed-loop catalyt. converterbase engine is T6Q');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(7183, 'M1M', '6-cyl. gasoline engine 2.9 L/140 kW VR6 Motronic, closed-loop catalyt. converterbase engine is T6Q'),
 (7184, 'M1N', '4-cyl. gasoline eng. 1.8 L/118 kW DIGIFANT G60, sm. intercooler, nominal rpm output, base engine is T3R'),
-(7185, 'M1P', '5-cylinder gasoline engine 2.0 L/85 kW continuous injection system base engine is T3T'),
+(7185, 'M1P', '5-cylinder gasoline engine 2.0 L/85 kW continuous injection system base engine is T3T');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (7186, 'M1Q', '4-cylinder gasoline engine 1.6 L/55 kW Monomotronic, MVEG 2 base engine is T4L'),
 (7187, 'M1R', '5-cylinder gasoline engine 2.0 L/85 kW electronic fuel injection and cat base engine is T3T'),
 (7188, 'M1S', '5-cyl. gasoline engine 2.2 L/169 kW 20V closed-loop catalytic converter base engine is T3V'),
@@ -7762,12 +7762,12 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (7714, 'N1A', 'leather seat covering'),
 (7715, 'N1B', 'leather seat covering'),
 (7716, 'N1C', 'split-knit seat covering'),
-(7717, 'N1D', 'fabric seat covering \"Satellite\"');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(7717, 'N1D', 'fabric seat covering \"Satellite\"'),
 (7718, 'N1E', 'fabric seat covering \"Phoenix\" leatherette bolsters'),
 (7719, 'N1F', 'seat coverings in leather, G grain pattern/leatherette, B grain pattern'),
 (7720, 'N1G', 'leather seat covering (for sports seats)'),
-(7721, 'N1H', 'leather seat covering'),
+(7721, 'N1H', 'leather seat covering');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (7722, 'N1J', 'split-knit seat covering'),
 (7723, 'N1K', 'leatherette seat covering (spiked) New Beetle sew pattern'),
 (7724, 'N1L', 'woven fabric seat covering'),
@@ -8241,7 +8241,7 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (8192, 'S05', 'Golf Sedan \"Plus\", foreign currency'),
 (8193, 'S06', 'SECURITAS vehicles'),
 (8194, 'S07', 'identification EURO 1 engine'),
-(8195, 'S08', 'No wax flooding for this vehicle▄'),
+(8195, 'S08', 'No wax flooding for this vehicle'),
 (8196, 'S09', 'control of SDI engine, optimized in model year 1998'),
 (8197, 'S0A', 'introduction of new engine'),
 (8198, 'S0B', 'veh. w/ engineering build status of current model year a. vehicle identification no. of next model year'),
@@ -8684,13 +8684,13 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (8635, 'SL9', 'in-plant control PL-2'),
 (8636, 'SM0', 'bodywork manufacturer RONTAN'),
 (8637, 'SM1', 'bodywork manufacturer ENGESIG'),
-(8638, 'SM2', 'control of 111kW delivery van for bodywork manufacturer');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(8638, 'SM2', 'control of 111kW delivery van for bodywork manufacturer'),
 (8639, 'SM3', 'reduced price for chrome roof rails'),
 (8640, 'SM4', 'vehicles with manufacture ID number, calendar week 22'),
 (8641, 'SM5', 'partition grille on B-pillar'),
 (8642, 'SM6', 'partition grille on C-pillar'),
-(8643, 'SM7', 'control of change request V00BG5'),
+(8643, 'SM7', 'control of change request V00BG5');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (8644, 'SM8', 'preparation of load compartment ventilation in production process'),
 (8645, 'SM9', 'control of deviation permit V01J79E (installation of deviating radiator)'),
 (8646, 'SN0', 'alloy wheels C3H instead of C2U'),
@@ -9619,14 +9619,14 @@ INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (9569, 'X0N', 'national sales program industrial engines'),
 (9570, 'X10', 'national sales program Central Europe'),
 (9571, 'X11', 'national sales program Northern Europe'),
-(9572, 'X12', 'national sales program Southern Europe');
-INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
+(9572, 'X12', 'national sales program Southern Europe'),
 (9573, 'X13', 'national sales program Europe (RHD)'),
 (9574, 'X19', 'suspension range 319'),
 (9575, 'X1A', 'national sales program Denmark'),
 (9576, 'X1B', 'national sales program Finland'),
 (9577, 'X1C', 'national sales program Norway'),
-(9578, 'X1D', 'national sales program Sweden'),
+(9578, 'X1D', 'national sales program Sweden');
+INSERT INTO `kody_pl` (`Identyfikator`, `Kod`, `Opis`) VALUES
 (9579, 'X1E', 'national sales program Iceland'),
 (9580, 'X1F', 'national sales program Czech Republic'),
 (9581, 'X1G', 'national sales program Czech Republic'),
