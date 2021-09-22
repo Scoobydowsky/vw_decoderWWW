@@ -5,6 +5,8 @@
 </head>
 <body>
   <?php
+  include 'conn.php';
+  //check on start codes
   @$kod1 = $_POST["code1"];
   @$kod2 = $_POST["code2"];
   @$kod3 = $_POST["code3"];
