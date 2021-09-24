@@ -48,7 +48,7 @@ include 'vars.php';
                      <div class="top_details">
                         <!-- Languages DropDown-->
                         <div class="languages drop">
-                           <a href="#"><i class="fa fa-globe"></i> Languages</a>
+                           <a href="#"><i class="fa fa-globe"></i> Język</a>
                            <div class="languages-panel">
                                <ul class="content">
                                   <li class="active"><a href="#">Polski<i class="fa fa-check lang_checked"></i></a></li>
@@ -65,7 +65,7 @@ include 'vars.php';
                 <!-- Top Social Media-->
 				<div class="col-xs-3 right">
 					<div class="top-social-media">
-                        <a href="#"><i class="fa fa-envelope-o"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
                     </div>
 				</div>
 				<!-- End Social Media-->
