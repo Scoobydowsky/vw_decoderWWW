@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
   <?php
   //back button
-  echo " <form action=\"index.php\">
-     <input type=\"submit\" value=\"Wróć do wpisywania kodów\">
-   </form>";
+  //echo " <form action=\"index.php\">
+//     <input type=\"submit\" value=\"Wróć do wpisywania kodów\">
+  // </form>";
 
    ?>
 <?php
@@ -26,6 +20,7 @@ try{
 }
 
 //check on start codes
+//TODO pętla dla elastyczności
 @$kod1 = $_POST["code1"];
 @$kod2 = $_POST["code2"];
 @$kod3 = $_POST["code3"];
@@ -39,7 +34,7 @@ try{
 
 //check codes work good
 //echo $kod1;
-echo "<table style='border: solid 1px black;'>";
+echo "<table style='border: solid 1px black;padding: 10px;width: -webkit-fill-available;'>";
 echo "<tr><th>KOD</th><th>OPIS</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
@@ -61,6 +56,7 @@ class TableRows extends RecursiveIteratorIterator {
 }
 //load form db eq description
 $stmt = $conn->prepare("SELECT `Kod`,`Opis` FROM `kody_pl`WHERE `Kod` IN ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )");
+//TODO pętla dla elastyczności
   $stmt->execute([$kod1, $kod2, $kod3, $kod4, $kod5, $kod6, $kod7, $kod8, $kod9, $kod10]);
 
   // set the resulting array to associative
@@ -69,7 +65,5 @@ $stmt = $conn->prepare("SELECT `Kod`,`Opis` FROM `kody_pl`WHERE `Kod` IN ( ?, ?,
   foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
     echo $v;
 }//fetch to array
-
+echo "</table>";
  ?>
-</body>
-</html>
