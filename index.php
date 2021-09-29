@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-
+  <?php
+  include 'vars.php';
+  ?>
     <meta charset="utf-8" />
     <title>Arwen OnePage HTML Template</title>
     <meta name="description" content="" />
@@ -20,14 +22,81 @@
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/player/YTPlayer.css" />
 	<!-- End CSS Files -->
+<script type="text/javascript">
+ function moreCodes(){
+// adding new codes
+let number = document.getElementById("addMoreCodes").value;
+// convert to decimental
+var numberInt = parseInt(number,10);
+//load code qty
+var codeqty = "<?php echo $code_qty;?>" ;
+//convert to decimental
+var codeqtyInt = parseInt(codeqty,10);
+// calc added codes+ codes in default
+var codeamnt =  codeqtyInt + numberInt;
+//get div under form
+var containerINPUT = document.getElementById("containerINPUT");
+ // Clear previous contents of that div
+while (containerINPUT.hasChildNodes()) {
+containerINPUT.removeChild(containerINPUT.lastChild);
+}
+//helping var to count code
+var codeJsNo;
+//show how many input exist
+document.getElementById("test").innerHTML = codeamnt;
+//for for creating input
+ for (step = 1 ; step <= numberInt ; step++){
+   codeJsNo = codeqtyInt + step ;
+   containerINPUT.appendChild(document.createTextNode("Kod "+ codeJsNo ));//create text before input
+    var input = document.createElement("input");//create input
+    input.type = "text"; //set type of input
+    input.name = "code" + codeJsNo ;//set name of input
+    input.id  = "code" + codeJsNo ;//set id of input
+    input.style = "margin: 10px;"//set style of input
+    containerINPUT.appendChild(input);//show after child
+    //check is 2nd input for brake line
+    if(parseInt(codeJsNo,10) % 2 == 0){
+    containerINPUT.appendChild(document.createElement("br"));//break line
+    }
+  }
+ }
+ function loadData(){
+   var tableDiv = document.getElementById("tableDiv");
+   // Clear previous content of the div
+   while (tableDiv.hasChildNodes()) {
+   tableDiv.removeChild(tableDiv.lastChild);
+   };
 
+
+   // adding new codes
+   let number = document.getElementById("addMoreCodes").value;
+   // convert to decimental
+   var numberInt = parseInt(number,10);
+   //load code qty
+   var codeqty = "<?php echo $code_qty;?>" ;
+   //convert to decimental
+   var codeqtyInt = parseInt(codeqty,10);
+   // calc added codes+ codes in default
+   var codeamnt =  codeqtyInt + numberInt;
+   //save code ammount to next use
+   document.cookie = "codeamnt="+codeamnt;
+   // create new array
+   var codeArr = [];
+   //loop to save codes to next use
+   for(saveCode = 1; saveCode <= codeamnt; saveCode++){
+     codeArr[saveCode] = document.getElementById("code"+ saveCode ).value;
+     document.cookie = "kod"+saveCode+"="+codeArr[saveCode];
+   }
+document.getElementById("main_title").innerHTML = "TWOJE KODY";
+document.getElementById("skills-description").innerHTML = "Oto twoje kody wraz z opisami:";
+$("#tableDiv").load("result2.php");
+}
+</script>
 </head>
 
 
 <body data-spy="scroll" data-target=".nav-menu" data-offset="50">
-<?php
-include 'vars.php';
-?>
+
     <!-- Page Loader-->
     <div id="pageloader">
         <div class="loader-item">
@@ -89,9 +158,8 @@ include 'vars.php';
                 <div class="nav-menu">
                     <ul class="nav main-nav">
                         <li><a class="scroll" href="index.php">Rozpocznij od nowa</a></li>
-                        <li><a class="scroll" href="#important_links">About</a></li>
-                        <li><a class="scroll" href="#history">History</a></li>
-                        <li><a class="scroll" href="#team">Team</a></li>
+                        <li><p class="scroll">Dodaj pola:</p></li>
+                        <li><input type="number" id="addMoreCodes" min="1" max="50" value="0" /><button type="button" onclick="moreCodes()"><i class="fa fa-plus"></i></button></li>
                     </ul>
                 </div>
                 <!-- End Nav Menu -->
@@ -100,10 +168,9 @@ include 'vars.php';
                 <div class="dropdown mobile-drop">
                     <a data-toggle="dropdown" class="mobile-menu" href="#"><i class="fa fa-bars"></i></a>
                     <ul class="nav dropdown-menu fullwidth" role="menu" >
-                        <li><a class="scroll" href="#home">Home</a></li>
-                        <li><a class="scroll" href="#important_links">About</a></li>
-                        <li><a class="scroll" href="#history">History</a></li>
-                        <li><a class="scroll" href="#team">Team</a></li>
+                      <li><a class="scroll" href="index.php">Rozpocznij od nowa</a></li>
+                      <li><p class="scroll">Dodaj pola:</p></li>
+                      <li><input type="number" id="addMoreCodes" min="1" max="50" value="0" /><button type="button" onclick="moreCodes()"><i class="fa fa-plus"></i></button></li>
                     </ul>
                 </div>
                 <!-- End Dropdown Menu For Mobile Devices-->
@@ -114,7 +181,6 @@ include 'vars.php';
         <!-- End Navigation Section -->
 
 	</section>
->
 
 
     <!-- Skills and Possibilities -->
@@ -131,25 +197,42 @@ include 'vars.php';
                        <!-- Tab -->
                        <div class="tab-pane fade in active" id="first">
                           <div class="tab-description">
-                             <form action="result.php" method="post">
+                             <form action="" method="POST">
                               <!-- TODO pętla dla elastyczności -->
-                              Kod 1:<input type="text" maxlength="3" name="code1" required>
+                              Kod 1:<input type="text" maxlength="3" name="code1" id="code1" required>
                               <?php
-                              for($i= 2; $i <= 10; $i++){
-                              echo "Kod ".$i.":<input type=\"text\" maxlength=\"3\" name=\"code$i\">";
+                              for($i= 2; $i <= $code_qty; $i++){
+                              echo "Kod ".$i.":<input type=\"text\" maxlength=\"3\" name=\"code$i\" id=\"code$i\" style='margin: 10px;'>";
                               if($i % 2 == 0){
                               echo "<br />";
-                              };
+                            };
+
+                          }?>
+                          <!-- ADD more code area-->
+                          <div id="containerINPUT">
+                          </div>
+                          <p id="test">
+                            a
+                          </p>
+                              <?php
                               if($i == $code_qty){
                               echo "<br />";
                               }
-                              }
-
                               ?>
+                              <!-- pętla js dodająca pola -->
+
                               <!-- Koniec pętli-->
-                              <input type="submit" value="Sprawdź">
-                              <input type="button" value="Resetuj">
+                              <input type="button" value="Sprawdź" onclick="loadData()">
+                              <input type="reset" value="Resetuj">
+                              <p>
+                                W celu sprawdzenia kodów są zapisywane pliki cookies
+                                (po kliknięciu w przycisk sprawdź, które kasuja się po zamknieciu przeglądarki),
+                                jeżeli nie zgadasz się<br/>
+                                ZAMKNIJ TĄ STRONĘ
+                              </p>
                               </form>
+
+
                           </div>
                       </div>
                       <!-- End Tab -->
@@ -164,15 +247,17 @@ include 'vars.php';
               <div class="progress-bars animated" data-animation="fadeInRight" data-animation-delay="600">
 
                 <!-- TODO asynchroniczny formularz-->
-                  <h2 class="main_title">Gdzie znaleźć kody wyposażenia?</h2>
-                  <p class="skills-description">W przypadku VW znajdują się one w instrukcji albo pod wykładziną bagażnika przy kole.</p>
+                  <h2 class="main_title" id="main_title">Gdzie znaleźć kody wyposażenia?</h2>
+                  <p class="skills-description" id="skills-description">W przypadku VW znajdują się one w instrukcji albo pod wykładziną bagażnika przy kole.</p>
 
                   <!-- Progress Content -->
                   <div class="progress-content">
-                  <img src="images/desc1.jpg" alt=""/>
-                  <!-- zamiana w tabelę-->
-                  <p class="skills-description">Na zdjęciu oznaczone nr 4</p>
-                  <?php //include 'result.php';?>
+                    <div id="tableDiv">
+                      <img src="images/desc1.jpg" alt=""/>
+                      <!-- zamiana w tabelę-->
+                      <p class="skills-description">Na zdjęciu oznaczone nr 4</p>
+                      <?php //include 'result.php';?>
+                    </div>
                   </div>
                   <!-- End Progress Content -->
               </div>
@@ -222,9 +307,6 @@ include 'vars.php';
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/rev-slider/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="js/rev-slider/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
     <script type="text/javascript" src="js/jquery.mapmarker.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
