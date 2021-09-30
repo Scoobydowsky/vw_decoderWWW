@@ -86,7 +86,7 @@ var codeJsNo;
    }
 document.getElementById("main_title").innerHTML = "TWOJE KODY";
 document.getElementById("skills-description").innerHTML = "Oto twoje kody wraz z opisami:";
-$("#tableDiv").load("result2.php");
+$("#tableDiv").load("result.php");
 }
 </script>
 </head>
