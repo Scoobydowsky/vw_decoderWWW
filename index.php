@@ -25,6 +25,7 @@
  function moreCodes(){
 // adding new codes
 let number = document.getElementById("addMoreCodes").value;
+
 // convert to decimental
 var numberInt = parseInt(number,10);
 //load code qty
@@ -166,8 +167,6 @@ $("#tableDiv").load("result.php");
                     <a data-toggle="dropdown" class="mobile-menu" href="#"><i class="fa fa-bars"></i></a>
                     <ul class="nav dropdown-menu fullwidth" role="menu" >
                       <li><a class="scroll" href="index.php">Rozpocznij od nowa</a></li>
-                      <li><p class="scroll">Dodaj pola:</p></li>
-                      <li><input type="number" id="addMoreCodes" min="1" max="50" value="0" /><button type="button" onclick="moreCodes()"><i class="fa fa-plus"></i></button></li>
                     </ul>
                 </div>
                 <!-- End Dropdown Menu For Mobile Devices-->
@@ -222,7 +221,8 @@ $("#tableDiv").load("result.php");
                                 W celu sprawdzenia kodów są zapisywane pliki cookies
                                 (po kliknięciu w przycisk sprawdź, które kasuja się po zamknieciu przeglądarki),
                                 jeżeli nie zgadasz się<br/>
-                                ZAMKNIJ TĄ STRONĘ
+                                ZAMKNIJ TĄ STRONĘ<br/>
+                                Strona mobilna obsługuje tylko max 10 kodów na raz, odpal stronę na komputerze żeby móc rozkodować 60 kodów na raz.
                               </p>
                               </form>
 
@@ -239,8 +239,6 @@ $("#tableDiv").load("result.php");
 
               <!-- Progress -->
               <div class="progress-bars animated" data-animation="fadeInRight" data-animation-delay="600">
-
-                <!-- TODO asynchroniczny formularz-->
                   <h2 class="main_title" id="main_title">Gdzie znaleźć kody wyposażenia?</h2>
                   <p class="skills-description" id="skills-description">W przypadku VW znajdują się one w instrukcji albo pod wykładziną bagażnika przy kole.</p>
 
@@ -250,7 +248,6 @@ $("#tableDiv").load("result.php");
                       <img src="images/desc1.jpg" alt=""/>
                       <!-- zamiana w tabelę-->
                       <p class="skills-description">Na zdjęciu oznaczone nr 4</p>
-                      <?php //include 'result.php';?>
                     </div>
                   </div>
                   <!-- End Progress Content -->
