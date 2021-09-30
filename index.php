@@ -5,7 +5,8 @@
   include 'vars.php';
   ?>
     <meta charset="utf-8" />
-    <title>Arwen OnePage HTML Template</title>
+    <title>VW Decoder- Rozkoduj swoje wyposażenie</title>
+    <meta lang="pl" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,11 +17,9 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" />
 	<link rel="stylesheet" href="css/settings.css" />
-	<link rel="stylesheet" href="css/prettyPhoto.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
-	<link rel="stylesheet" href="css/player/YTPlayer.css" />
+
 	<!-- End CSS Files -->
 <script type="text/javascript">
  function moreCodes(){
@@ -42,8 +41,6 @@ containerINPUT.removeChild(containerINPUT.lastChild);
 }
 //helping var to count code
 var codeJsNo;
-//show how many input exist
-document.getElementById("test").innerHTML = codeamnt;
 //for for creating input
  for (step = 1 ; step <= numberInt ; step++){
    codeJsNo = codeqtyInt + step ;
@@ -211,9 +208,6 @@ $("#tableDiv").load("result2.php");
                           <!-- ADD more code area-->
                           <div id="containerINPUT">
                           </div>
-                          <p id="test">
-                            a
-                          </p>
                               <?php
                               if($i == $code_qty){
                               echo "<br />";
@@ -282,7 +276,7 @@ $("#tableDiv").load("result2.php");
                 <span class="footer-logo animated" data-animation="fadeInUp" data-animation-delay="500">VW Decoder</span>
                 <!-- Site Copyright -->
 				<p class="footer-text copyright animated" data-animation="fadeInUp" data-animation-delay="700">
-					Copyright © <? echo : ?> - Scoobydowsky. All Rights Reserved.
+					Copyright © <?php echo $year ?> - Scoobydowsky. Wszystkie prawa zastrzeżone <!--All Rights Reserved.-->
 				</p><!-- End Site Copyright -->
 
             </div>
@@ -297,17 +291,10 @@ $("#tableDiv").load("result2.php");
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/modernizr-latest.js"></script>
-	<script type="text/javascript" src="js/SmoothScroll.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/jquery.mapmarker.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
 	<!-- End JS Files -->

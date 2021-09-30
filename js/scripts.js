@@ -3,8 +3,8 @@ jQuery(document).ready(function($){
     var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
 	var agentST = deviceAgent.match(/(ipad)/);
     if (agentID) {
- 		$('*').removeClass('animated');  
-		
+ 		$('*').removeClass('animated');
+
     }
 	if (agentST){
 		$(window).load(function(){
@@ -12,23 +12,23 @@ jQuery(document).ready(function($){
 			$("#navigation").sticky({ topSpacing: 0 });
 		});
 	}
-	
+
 	// Detect whether device supports orientationchange event, otherwise fall back to
 	// the resize event.
 	/*var supportsOrientationChange = "onorientationchange" in window,
 		orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
-	
+
 	window.addEventListener(orientationEvent, function() {
 		alert('HOLY ROTATING SCREENS BATMAN:' + window.orientation + " " + screen.width);
 	}, false);*/
-	
+
 });
 
 
-	
+
 /* ==============================================
 Drop Down Menu Fade Effect
-=============================================== */	
+=============================================== */
 
 $('.nav-toggle').hover(function() {
     $(this).find('.dropdown-menu').first().stop(true, true).fadeIn(400);
@@ -38,28 +38,28 @@ $('.nav-toggle').hover(function() {
 
 /* ==============================================
 Drop Down Menu For Mobile
-=============================================== */	
+=============================================== */
 
-$('.mobile-toggle').hover(function() {   
+$('.mobile-toggle').hover(function() {
 	//$(this).addClass('opened_menu');
 	$(this).find('.dr-mobile').first().stop(true, true).slideDown(400);
     }, function() {
     $(this).find('.dr-mobile').first().stop(true, true).slideToggle(400);
 
 });
-	
+
 /* ==============================================
 Pretty Photo
-=============================================== */	
-	
+=============================================== */
+
 jQuery(document).ready(function(){
-	
+
 	if(!/ipad|iphone/i.test(navigator.userAgent)){
 		//Pretty Photo For Our Portfolio
 		jQuery(".pretty-lightbox-a a[data-rel^='prettyPhoto']").prettyPhoto({
 			theme: "facebook",
 		});
-		
+
 		//Pretty Photo For Company History
 		jQuery(".pretty-lightbox-b a[data-rel^='prettyPhoto']").prettyPhoto({
 			theme: "facebook",
@@ -69,10 +69,10 @@ jQuery(document).ready(function(){
 		jQuery(".pretty-lightbox-b a[data-rel^='prettyPhoto']").attr('target', '_blank');
 	}
 });
-		
+
 /* ==============================================
 Scroll Navigation
-=============================================== */	
+=============================================== */
 
 $(function() {
 	$('.scroll').bind('click', function(event) {
@@ -91,14 +91,14 @@ Our Portfolio / isotope Scripts
 ===============================================	*/
 
     $(window).load(function(){
-      
+
       var $container = $('.items');
 
       $container.isotope({
         itemSelector : '.work'
       });
-      
-      
+
+
       var $optionSets = $('#options .option-set'),
           $optionLinks = $optionSets.find('a');
 
@@ -111,7 +111,7 @@ Our Portfolio / isotope Scripts
         var $optionSet = $this.parents('.option-set');
         $optionSet.find('.selected').removeClass('selected');
         $this.addClass('selected');
-  
+
         // make option object dynamically, i.e. { filter: '.my-filter-class' }
         var options = {},
             key = $optionSet.attr('data-option-key'),
@@ -126,13 +126,13 @@ Our Portfolio / isotope Scripts
           // otherwise, apply new options
           $container.isotope( options );
         }
-        
+
         return false;
       });
 
-      
+
     });
-  
+
  /* ==============================================
 Page Loader
 =============================================== */
@@ -153,7 +153,7 @@ Parallax Effect
 'use strict';
 $(document).ready(function(){
 $(window).bind('load', function () {
-		parallaxInit();						  
+		parallaxInit();
 	});
 	function parallaxInit() {
 		testMobile = isMobile.any();
@@ -163,9 +163,9 @@ $(window).bind('load', function () {
 			$('.toons1').parallax("50%", 0.5);
 			$('.toons2').parallax("50%", 0.5);
 		}
-	}	
-	parallaxInit();	 
-});	
+	}
+	parallaxInit();
+});
 
 //Mobile Detect
 var testMobile;
@@ -190,11 +190,11 @@ var isMobile = {
     }
 };
 }( jQuery ));
-	
-	
+
+
 /* ==============================================
 Carousel Slider
-=============================================== */		
+=============================================== */
 
     $(document).ready(function($) {
 		'use strict';
@@ -208,7 +208,7 @@ Carousel Slider
 /* ==============================================
 Navigation Menu, Sticky Effect For Navigation Bar
 =============================================== */
-	
+
 	if(!( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
 	    $(window).load(function(){
 			'use strict';
@@ -224,12 +224,12 @@ carousel
 		  interval: 3000
 		})
 	})
-  
+
  /* ==============================================
 //Elements animation
-=============================================== */		
+=============================================== */
 jQuery(document).ready(function($) {
-	
+
 	'use strict';
 
 	$('.counter').appear(function() {
@@ -239,11 +239,11 @@ jQuery(document).ready(function($) {
 			elem.children('.value').countTo();
 		}
 	});
-	
+
 });
 
 jQuery(document).ready(function($) {
-	
+
 'use strict';
     if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )) {
 	$('.animated').appear(function() {
@@ -267,35 +267,16 @@ jQuery(document).ready(function($) {
     }
 });
 
- /* ==============================================
-Revolution Slider
-=============================================== */
-
-var revapi;
-
-jQuery(document).ready(function() {
-
-	   revapi = jQuery('.tp-banner').revolution(
-		{
-			delay:9000,
-			startwidth:1170,
-			startheight:550,
-			hideThumbs:10,
-			fullWidth:"on",
-			forceFullWidth:"on"
-		});
-
-});
 
  /* ==============================================
 Go To Top
-=============================================== */	
-	
+=============================================== */
+
 $(document).ready(function(){
 
 	// hide #go-top first
 	$("#go-top").hide();
-	
+
 	// fade in #go-top
 	$(function () {
 		$(window).scroll(function () {
@@ -351,4 +332,4 @@ Video Background
 
 jQuery(function(){
      jQuery(".player").mb_YTPlayer();
-});     
+});
