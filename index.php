@@ -104,7 +104,6 @@ function prevLangEN() {
                 <!-- Nav Menu -->
                 <div class="nav-menu">
                     <ul class="nav main-nav">
-                        <li><a class="scroll" href="#"><p id="startOverTxt">Rozpocznij od nowa</p></a></li>
                     </ul>
                 </div>
                 <!-- End Nav Menu -->
@@ -113,7 +112,7 @@ function prevLangEN() {
                 <div class="dropdown mobile-drop">
                     <a data-toggle="dropdown" class="mobile-menu" href="#"><i class="fa fa-bars"></i></a>
                     <ul class="nav dropdown-menu fullwidth" role="menu" >
-                      <li><a class="scroll" href="#">Rozpocznij od nowa</a></li>
+
                     </ul>
                 </div>
                 <!-- End Dropdown Menu For Mobile Devices-->
