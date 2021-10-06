@@ -1,8 +1,8 @@
 # vw_decoder
 Easy decode your Volkswagen car equipment.<br />
 available in 2 language:
--Polish
--English
+-Polish <br/>
+-English<br/>
 
 This web based app allow check what factory instaled in your volkswagen car in 3 simple steps:
 1.Wrote codes (max 50 codes on mobile max 10 codes)<br/>
