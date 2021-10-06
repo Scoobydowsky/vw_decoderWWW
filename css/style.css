@@ -44,7 +44,7 @@ ol, ul {
 b.caret {
 	margin-top: -3px;
 }
-/* Titles */	
+/* Titles */
 
 .main_title {
 	color: #29A9FF;
@@ -83,7 +83,7 @@ b.caret {
 	border-bottom: 8px solid rgba(0,0,0,.3);
 	left: 49%;
 }
-/* parallax */	
+/* parallax */
 .parallax {
 	background-attachment: fixed;
 	background-position: center center;
@@ -665,7 +665,7 @@ a.white-button{
 a.white-button:hover{
 	background: none;
 	color:#fff !important;
-	
+
 }
 a.red-button{
 	display: inline-block;
@@ -688,7 +688,7 @@ a.red-button{
 a.red-button:hover{
 	background: none;
 	color:#F26341 !important;
-	
+
 }
 
 /* Slide 3 */
@@ -770,10 +770,10 @@ a.red-button:hover{
     border-bottom: 1px dashed #CCCCCC;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
-	transition: all 0.3s;		
+	transition: all 0.3s;
 }
 #important_links .carousel-inner {
-	
+
 }
 .important_links {
 	padding: 60px 0px
@@ -853,7 +853,7 @@ a.red-button:hover{
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	
+
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -897,7 +897,7 @@ a.red-button:hover{
 	margin: 20px auto 0 auto;
 }
 /* About Control Buttons*/
-		
+
 .about-contents .owl-buttons {
 	width: 107%;
 	left: 0;
@@ -1012,7 +1012,7 @@ a.red-button:hover{
 	border-color: #F26341;
 }
 /* About Extended */
-	
+
 .about-extended {
 	background: #fafafa;
 	margin: 30px auto;
@@ -1087,10 +1087,10 @@ a.red-button:hover{
 
 .tab-pane {
 	background: #fff;
-	border:1px solid #CCCBC9;	
+	border:1px solid #CCCBC9;
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
-	box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);	
+	box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -1120,7 +1120,7 @@ a.red-button:hover{
 	width: 100%;
 }
 /* Progress */
-	
+
 .skills-description {
 	font-size: 18px;
 	margin-bottom: 20px;
@@ -1143,7 +1143,7 @@ a.red-button:hover{
 }
 .progress-content {
 	background: #fff;
-	border:1px solid #CCCBC9;	
+	border:1px solid #CCCBC9;
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
 	box-shadow:0 0 1px 1px #fff inset,inset 0 0 20px 3px rgba(230,226,220,.6);
@@ -1475,10 +1475,10 @@ a.load-more:hover {
 	border-right: 1px dashed #67747A;
 }
 
-/* Our Clients Say */	
+/* Our Clients Say */
 
 .clients-say-flex-slider{
-   position:relative;	
+   position:relative;
 }
 #client-say {
 	background-attachment: fixed;
@@ -1660,7 +1660,7 @@ a.load-more:hover {
 }
 
 /* Our Team */
-	
+
 #team {
 	background: #F5F5F5;
 }
@@ -1676,7 +1676,7 @@ a.load-more:hover {
 
 /* Our Team item */
 
-.team-items .owl-wrapper-outer .owl-wrapper .owl-item .item {	
+.team-items .owl-wrapper-outer .owl-wrapper .owl-item .item {
 	border:1px solid #CCCBC9;
 	background: #fff;
 	height: auto;
@@ -1689,11 +1689,11 @@ a.load-more:hover {
 	-webkit-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	
+
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 3px rgba(230,226,220,.6);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 3px rgba(230,226,220,.6);
 	box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 3px rgba(230,226,220,.6);
-	
+
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -1750,14 +1750,14 @@ a.load-more:hover {
     text-align: center;
     width: 35px;
     line-height: 35px;
-	
+
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
-	
-	
+
+
 }
 .socials a.facebook{
 	-webkit-transition: all 0.2s;
@@ -1832,7 +1832,7 @@ a.load-more:hover {
 	color: #fff;
 }
 .team-items .owl-wrapper-outer .owl-wrapper .owl-item .item:hover {
-	border: 1px solid #29A9FF;	
+	border: 1px solid #29A9FF;
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);
 	box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);
@@ -1976,7 +1976,7 @@ a.load-more:hover {
 	padding-bottom: 10px;
 	position: absolute;
 	width: 80px;
-	
+
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -2015,7 +2015,7 @@ a.load-more:hover {
 	height: auto;
 	margin-bottom: 20px;
 }
-/* Full Width Portfolio Version */	
+/* Full Width Portfolio Version */
 
 .fiven {
 	width: 19.99%;
@@ -2288,8 +2288,8 @@ a.load-more:hover {
 /* End: Recommended Isotope styles */
 
 
-/* features */ 
-   
+/* features */
+
 #features {
 	background-attachment: fixed;
 	background-image: url("../images/bg3.jpg");
@@ -2300,7 +2300,7 @@ a.load-more:hover {
 #features .content {
 	padding-bottom: 0px;
 }
-/* Services */	
+/* Services */
 
 #services {
 	background: #F5F5F5;
@@ -2349,7 +2349,7 @@ a.load-more:hover {
 	/* if you want inset shadow effect */
 	/*-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);
-	box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);*/	
+	box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(210,237,255,1);*/
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -2409,7 +2409,7 @@ hr.tall {
 	box-shadow:0 0 1px 1px #fff inset,inset 0 0 10px 5px rgba(242,208,199,1);*/
 }
 .services-box:hover .services-box-icon:before {
-	
+
 }
 .services-box:hover .feature-box-info p {
 	color: #4E6C7D;
@@ -2523,7 +2523,7 @@ hr.tall {
 .plan-price ul li span {
 	font-weight: 700;
 }
-a.buy-button {	
+a.buy-button {
 	position: relative;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -2552,13 +2552,13 @@ a.buy-button:after {
 	position: absolute;
 	z-index: 1;
 	background: rgba(0,0,0,.2);
-	
+
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-ms-border-radius: 3px;
-	-o-border-radius: 3px; 
-	  
+	-o-border-radius: 3px;
+
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
@@ -2572,13 +2572,13 @@ a.buy-button:before {
 	position: absolute;
 	z-index: 1;
 	background: rgba(0,0,0,.2);
-	
+
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-ms-border-radius: 3px;
-	-o-border-radius: 3px; 
-	  
+	-o-border-radius: 3px;
+
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
@@ -2591,7 +2591,7 @@ a.buy-button:hover:after , a.buy-button:hover:before {
    width:100%;
 }
 /* Pricing Tables Active */
-	
+
 .plans-prices .active, .plan-price:hover {
 	background: #FFFFFF;
     border-color: #74C7FF;
@@ -2614,7 +2614,7 @@ a.buy-button:hover:after , a.buy-button:hover:before {
 	border-bottom: 1px solid #74C7FF;
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 40px 0px rgba(210,237,255,1);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 40px 0px rgba(210,237,255,1);
-	box-shadow:0 0 1px 1px #fff inset,inset 0 0 40px 0px rgba(210,237,255,1);	
+	box-shadow:0 0 1px 1px #fff inset,inset 0 0 40px 0px rgba(210,237,255,1);
 }
 
 /* video */
@@ -2626,7 +2626,7 @@ a.buy-button:hover:after , a.buy-button:hover:before {
 }
 
 /* Contact Us */
-  
+
 #contact {
 	background: #F5F5F5;
 }
@@ -2645,7 +2645,7 @@ a.buy-button:hover:after , a.buy-button:hover:before {
 	box-shadow: none;
 	background-color: #fff;
 	border-color: #29A9FF;
-	
+
 }
 #contact-form .col-md-6:first-child {
 	padding-right: 5px;
@@ -2709,13 +2709,13 @@ a.buy-button:hover:after , a.buy-button:hover:before {
 	text-transform: uppercase;
 	position: relative;
 	border:none;
-	
+
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-ms-border-radius: 3px;
-	-o-border-radius: 3px;  
-	
+	-o-border-radius: 3px;
+
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -2731,13 +2731,13 @@ a.buy-button:hover:after , a.buy-button:hover:before {
   position: absolute;
   z-index: 1;
   background: rgba(0,0,0,.2);
-  
+
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -ms-border-radius: 3px;
-  -o-border-radius: 3px; 
-    
+  -o-border-radius: 3px;
+
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -2751,13 +2751,13 @@ a.buy-button:hover:after , a.buy-button:hover:before {
   position: absolute;
   z-index: 1;
   background: rgba(0,0,0,.2);
-  
+
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -ms-border-radius: 3px;
-  -o-border-radius: 3px; 
-	
+  -o-border-radius: 3px;
+
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -2824,7 +2824,7 @@ address p i.fa-minus {
 	color: #29A9FF;
 	-moz-box-shadow:0 0 1px 1px #fff inset,inset 0 0 7px 3px rgba(210,237,255,1);
 	-webkit-box-shadow:0 0 1px 1px #fff inset,inset 0 0 7px 3px rgba(210,237,255,1);
-	box-shadow:0 0 1px 1px #fff inset,inset 0 0 7px 3px rgba(210,237,255,1);	
+	box-shadow:0 0 1px 1px #fff inset,inset 0 0 7px 3px rgba(210,237,255,1);
     border-radius: 100px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -2904,7 +2904,7 @@ div.google-map:after {
 	transition: all 0.3s;
 }
 .align-center{
-    text-align:center;	
+    text-align:center;
 }
 
 /* Go To Top */
@@ -2951,7 +2951,7 @@ div.google-map:after {
     padding: 0 20px;
     text-align: center;
     text-transform: uppercase;
-	
+
 }
 
 .footer-text {

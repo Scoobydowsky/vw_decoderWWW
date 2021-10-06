@@ -6,7 +6,7 @@
 <?php
 //pobierz ilosć kodów
 try{
-  include 'conn.php';
+  include '../../conn.php';
   //connect to db
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $login, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php
-  include 'vars.php';
+  include '../../vars.php';
   ?>
     <meta charset="utf-8" />
     <title>VW Decoder- decode your equipment</title>
@@ -12,13 +12,13 @@
 
 	<!-- CSS Files -->
 
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/animate.min.css" />
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="css/settings.css" />
-	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/animate.min.css" />
+	<link rel="stylesheet" href="../../css/bootstrap.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/font-awesome.css" />
+	<link rel="stylesheet" href="../../css/settings.css" />
+	<link rel="stylesheet" href="../../css/responsive.css" />
 
 	<!-- End CSS Files -->
 <script type="text/javascript">
@@ -98,7 +98,7 @@ $("#tableDiv").load("result.php");
     <!-- Page Loader-->
     <div id="pageloader">
         <div class="loader-item">
-          <img src="images/loading.gif" alt='Loading...' />
+          <img src="../../images/loading.gif" alt='Loading...' />
         </div>
     </div>
     <!-- End Page Loader-->
@@ -118,8 +118,8 @@ $("#tableDiv").load("result.php");
                            <a href="#"><i class="fa fa-globe"></i> Language</a>
                            <div class="languages-panel">
                                <ul class="content">
-                                  <li><a href="../pl/index.php">Polski<i class="fa fa-check lang_checked"></i></a></li>
-                                  <li class="active"><a href="../en/index.php">English</a></li>
+                                  <li><a href="../pl/index.php">Polski</a></li>
+                                  <li class="active"><a href="../en/index.php">English<i class="fa fa-check lang_checked"></i></a></li>
                                </ul>
                            </div>
                         </div>
@@ -132,7 +132,7 @@ $("#tableDiv").load("result.php");
                 <!-- Top Social Media-->
 				<div class="col-xs-3 right">
 					<div class="top-social-media">
-                        <a href="#"><i class="fa fa-globe"></i></a>
+                        <a href="<?php echo $myWebsite;?>"><i class="fa fa-globe"></i></a>
                     </div>
 				</div>
 				<!-- End Social Media-->
@@ -148,7 +148,7 @@ $("#tableDiv").load("result.php");
             <div class="content navigation">
                 <!-- Logo -->
                 <div class="logo">
-                    <a class="scroll" href="#home"><h2 class="main_title">WV Decoder</h2></a>
+                    <a class="scroll" href="../../"><h2 class="main_title">WV Decoder</h2></a>
                 </div>
                 <!-- End Logo -->
 
@@ -195,10 +195,10 @@ $("#tableDiv").load("result.php");
                           <div class="tab-description">
                              <form action="" method="POST">
                               <!-- TODO pętla dla elastyczności -->
-                              Kod 1:<input type="text" maxlength="3" name="code1" id="code1" required>
+                              Code 1:<input type="text" maxlength="3" name="code1" id="code1" required>
                               <?php
                               for($i= 2; $i <= $code_qty; $i++){
-                              echo "Kod ".$i.":<input type=\"text\" maxlength=\"3\" name=\"code$i\" id=\"code$i\" style='margin: 10px;'>";
+                              echo "Code ".$i.":<input type=\"text\" maxlength=\"3\" name=\"code$i\" id=\"code$i\" style='margin: 10px;'>";
                               if($i % 2 == 0){
                               echo "<br />";
                             };
@@ -245,7 +245,7 @@ $("#tableDiv").load("result.php");
                   <!-- Progress Content -->
                   <div class="progress-content">
                     <div id="tableDiv">
-                      <img src="images/desc1.jpg" alt=""/>
+                      <img src="../../images/desc1.jpg" alt=""/>
                       <!-- zamiana w tabelę-->
                       <p class="skills-description">On the picture is number 4</p>
                     </div>
@@ -285,14 +285,14 @@ $("#tableDiv").load("result.php");
 
 	<!-- JS Files -->
 
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../js/jquery.appear.js"></script>
+	<script type="text/javascript" src="../../js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="../../js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="../../js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../../js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="../../js/scripts.js"></script>
 
 	<!-- End JS Files -->
 

@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <?php
-  include 'vars.php';
+  include '../../vars.php';
   ?>
     <meta charset="utf-8" />
     <title>VW Decoder- Rozkoduj swoje wyposażenie</title>
@@ -12,13 +12,13 @@
 
 	<!-- CSS Files -->
 
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/animate.min.css" />
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="css/settings.css" />
-	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="../../css/reset.css" />
+	<link rel="stylesheet" href="../../css/animate.min.css" />
+	<link rel="stylesheet" href="../../css/bootstrap.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+	<link rel="stylesheet" href="../../css/font-awesome.css" />
+	<link rel="stylesheet" href="../../css/settings.css" />
+	<link rel="stylesheet" href="../../css/responsive.css" />
 
 	<!-- End CSS Files -->
 <script type="text/javascript">
@@ -98,7 +98,7 @@ $("#tableDiv").load("result.php");
     <!-- Page Loader-->
     <div id="pageloader">
         <div class="loader-item">
-          <img src="images/loading.gif" alt='Loading...' />
+          <img src="../../images/loading.gif" alt='Loading...' />
         </div>
     </div>
     <!-- End Page Loader-->
@@ -148,7 +148,7 @@ $("#tableDiv").load("result.php");
             <div class="content navigation">
                 <!-- Logo -->
                 <div class="logo">
-                    <a class="scroll" href="#home"><h2 class="main_title">WV Decoder</h2></a>
+                    <a class="scroll" href="../../"><h2 class="main_title">WV Decoder</h2></a>
                 </div>
                 <!-- End Logo -->
 
@@ -245,7 +245,7 @@ $("#tableDiv").load("result.php");
                   <!-- Progress Content -->
                   <div class="progress-content">
                     <div id="tableDiv">
-                      <img src="images/desc1.jpg" alt=""/>
+                      <img src="../../images/desc1.jpg" alt=""/>
                       <!-- zamiana w tabelę-->
                       <p class="skills-description">Na zdjęciu oznaczone nr 4</p>
                     </div>
@@ -285,14 +285,14 @@ $("#tableDiv").load("result.php");
 
 	<!-- JS Files -->
 
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../js/jquery.appear.js"></script>
+	<script type="text/javascript" src="../../js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="../../js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="../../js/owl.carousel.js"></script>
+	<script type="text/javascript" src="../../js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="../../js/scripts.js"></script>
 
 	<!-- End JS Files -->
 
